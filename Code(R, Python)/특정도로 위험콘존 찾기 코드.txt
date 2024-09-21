@@ -1,8 +1,0 @@
-westsea <- subset(df, df$routeName=="서해안선")
-westsea_Risk <- subset(westsea, westsea$VMS_keyword=="결빙"&westsea$VMS_keyword=="노면미끄럼"&westsea$VMS_keyword=="노면습기" )
-
-table(westsea$czId[westsea$VMS_keyword=="결빙"]) # 서해안선 결빙 콘존
-table(westsea$czId[westsea$VMS_keyword=="노면미끄럼"]) #서해안선 노면미끄럼 콘존
-table(westsea$czId[westsea$VMS_keyword=="노면습기"]) # 노면습기
-
-# 또는 select= 로 특정 셀 찾기 가능
